@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(56, 128, 83);
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.data-box {
+    width: 200px;
+    height: 180px;
+    background-color: rgb(222, 227, 200);
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px 0 5px 15px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.month {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
