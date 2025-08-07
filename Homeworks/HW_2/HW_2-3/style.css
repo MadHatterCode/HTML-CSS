@@ -28,6 +28,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     padding: 5px 0 5px 15px;
+    box-shadow: 5px 5px 4px -3px rgba(140,106,106,0.67);
 }
 
 p {
