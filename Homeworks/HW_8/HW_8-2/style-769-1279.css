@@ -1,0 +1,28 @@
+@media (min-width: 768px) and (max-width: 1279px) {
+    .container {
+        margin: 0 auto;
+        box-sizing: border-box;
+        height: 652px;
+        width: 768px;
+        padding: 48px 24px;
+    }
+
+    .container .cards {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .cards .card {
+        width: 348px;
+    }
+
+    .cards .card img {
+        width: 168px;
+        height: 168px;
+        border-radius: 160px;
+        margin-bottom: 16px;
+    }
+}
