@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Plus Jakarta", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.w-1252 {
+    width: 1252px;
+}
+
+.btn-primary {
+    background-color: #6246EA;
+    color: #FFFFFE;
+    padding: 20px 23px 19px 23px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.btn-primary:hover {
+    filter: brightness(0.9);
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.heading-container h2 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.heading-container a {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.heading-container a svg {
+    vertical-align: middle;
+}
+
+/*-----------------------------HEADER----------------------------------------*/
+
+header {
+    background-color: #EFF0F3;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(229, 232, 237, 0.6);
+    height: 86px;
+    position: sticky;
+}
+
+.header__container {
+    width: 1252px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__container .brand {
+    font-weight: 600;
+    color: #001858;
+    line-height: 100%;
+    font-size: 36px;
+}
+
+.header__container .brand-dot {
+    font-weight: 700;
+    font-size: 18px;
+    color: #6246EA;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #2B2C34;
+}
+
+header nav button {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #6246EA;
+    color: #fff;
+    text-align: center;
+    padding: 10px 17px;
+    border-radius: 4px;
+}
+
+header nav button:hover {
+    filter: brightness(0.9);
+}
+
+
+/*-----------------------------HERO----------------------------------------*/
+
+main {
+    width: 100%;
+    background-color: #EFF0F3;
+}
+
+main .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+    margin: 0 auto;
+}
+
+.hero .hero__content {
+    width: 664px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 118px;
+}
+
+.hero .hero__content h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.hero .hero__content p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #9A9494;
+    border-left: 3px solid #2B2C34;
+    padding-left: 10px;
+}
+
+.hero .hero__content input {
+    background-color: #FFFFFE;
+    width: 444px;
+    padding: 21px 200px 21px 25px;
+    outline: none;
+    border: none;
+}
+
+.hero .hero__content input::placeholder {
+    font-size: 20px;
+    font-weight: 400;
+    color: #C0C0C0;
+}
+
+.hero .hero__content input:focus {
+    outline: 2px solid #C0C0C0;
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+.hero .hero__content button {
+    flex: none;
+    align-self: auto;
+}
+
+.hero .hero__image {
+    display: block;
+}
+
+/*--------------------------------------------CATEGORIES----------------------------------------*/
+
+.categories {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    /*background-color:#EFF0F3;*/
+}
+
+.categories__container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 37px;
+}
+
+.categories__item {
+    width: 220px;
+    height: 280px;
+    border-radius: 8px;
+    background-color: #FFFFFE;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 24px;
+    gap: 30px;
+    padding-left: 15px;
+}
+
+.categories__item:hover {
+    background-color: #6246EA;
+    color: #fff;
+    transition-duration: 0.6s;
+}
+
+
+/*-----------------------------------------GALLERY----------------------------------*/
+.gallery {
+    margin-top: 80px;
+}
+
