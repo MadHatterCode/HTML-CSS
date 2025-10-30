@@ -277,7 +277,7 @@ main .hero {
 
 .gallery__item:hover {
     transform: translate(-4px, -6px);
-    box-shadow: 4px 6px 13px 0px rgba(215, 215, 215, 0.25);
+    box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
 }
 
 .gallery__item > img {
