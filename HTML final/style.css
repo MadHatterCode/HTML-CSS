@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');*
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+    min-height: 100%;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -31,14 +30,19 @@ img {
     height: auto;
 }
 
+
+
+/*----------------------UTILITIES--------------------*/
+
 .w-1252 {
-    width: 1252px;
+    max-width: 1252px;
+    width: min(100%, 92vw);
+    margin: 0 auto;
 }
 
 .brand {
     font-weight: 600;
     color: #001858;
-    line-height: 100%;
     font-size: 36px;
 }
 
@@ -79,15 +83,16 @@ img {
     color: #C0C0C0;
 }
 
-.input-primary:focus {
-    outline: 2px solid #C0C0C0;
-    opacity: 0.7;
-    border-radius: 5px;
+.input-primary:focus{
+    outline:2px solid #C0C0C0;
+    opacity:1;
+    border-radius:5px;
 }
 
 .section-heading {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     margin-bottom: 30px;
 }
@@ -108,20 +113,29 @@ img {
     vertical-align: middle;
 }
 
+a:focus-visible, button:focus-visible, input:focus-visible{
+    outline:2px solid #6246EA;
+    outline-offset:2px;
+}
+
 /*-----------------------------HEADER----------------------------------------*/
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: #EFF0F3;
     box-shadow: 0 1px 2px rgba(0,0,0,0.05);
     border-bottom: 1px solid rgba(229, 232, 237, 0.6);
-    height: 86px;
-    position: sticky;
+    min-height: 86px;
+
 }
 
 .header__container {
-    width: 1252px;
     margin: 0 auto;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -170,8 +184,7 @@ main .hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 900px;
-    margin: 0 auto;
+    min-height: 900px;
 }
 
 .hero .hero__content {
@@ -189,6 +202,10 @@ main .hero {
     font-weight: 700;
 }
 
+.hero .hero__content h1 span {
+    display: block;
+}
+
 .hero .hero__content p {
     font-size: 20px;
     font-weight: 400;
@@ -196,17 +213,20 @@ main .hero {
     border-left: 3px solid #2B2C34;
     padding-left: 10px;
 }
+.hero .hero__content p span {
+    display: block;
+}
 
 
-/*--------------------------------------------CATEGORIES----------------------------------------*/
+    /*--------------------------------------------CATEGORIES----------------------------------------*/
 
 .categories {
-    height: 500px;
+    height: auto;
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0 auto;
 }
 
 .categories__container {
@@ -241,16 +261,12 @@ main .hero {
 /*-----------------------------------------GALLERY----------------------------------*/
 .gallery {
     padding: 80px 0 80px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #FFFFFE;
     width: 100%;
 }
 
 .gallery__container {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr .1fr;
+    width: 100%;
     gap: 80px;
 }
 
@@ -374,7 +390,8 @@ main .hero {
 footer {
     padding-top: 50px;
     width: 100%;
-    height: 435px;
+    height: auto;
+    min-height: 435px;
     background-color: #E4E5E9;
     display: flex;
     align-items: center;
@@ -384,7 +401,6 @@ footer {
 
 .footer__container {
     height: 100%;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
